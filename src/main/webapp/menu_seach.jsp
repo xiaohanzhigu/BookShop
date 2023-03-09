@@ -10,9 +10,9 @@
 <head>
     <title>menu</title>
     <!-- 导入 main.css、首页轮播图 css 和 js 脚本 -->
-    <link rel="stylesheet" href="static/css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/autoplay.css" type="text/css"/>
-    <script type="text/javascript" src="static/js/autoplay.js"></script>
+    <%--    <link rel="stylesheet" href="static/css/main.css" type="text/css"/>--%>
+    <%--    <link rel="stylesheet" href="static/css/autoplay.css" type="text/css"/>--%>
+    <%--    <script type="text/javascript" src="static/js/autoplay.js"></script>--%>
 </head>
 <body>
 <div id="divmenu">
