@@ -20,7 +20,7 @@
     <%@ include file="head.jsp" %>
     <!-- 网上书城顶部 end -->
     <!--2. 网上书城菜单列表 start -->
-    <%@ include file="menu_seach.jsp" %>
+    <%@ include file="menu_search.jsp" %>
     <!-- 网上书城菜单列表 end -->
 
     <!--用户注册-->

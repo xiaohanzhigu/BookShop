@@ -9,7 +9,7 @@
 </head>
 <body class="main">
 <jsp:include page="head.jsp" />
-<jsp:include page="menu_seach.jsp" />
+<jsp:include page="menu_search.jsp" />
 <div id="divcontent">
     <form action="/bookshop/login" method="post">
         <table width="900px" border="0" cellspacing="0">
@@ -24,7 +24,7 @@
                                         <table width="100%" border="0" cellspacing="0">
                                             <tr>
                                                 <td style="text-align:center; padding-top:20px">
-                                                    <img src="static/images/logintitle.gif" width="150" height="30" />
+                                                    <img src="${pageContext.request.contextPath}/static/images/logintitle.gif" width="150" height="30" />
                                                 </td>
                                             </tr>
                                             <tr>
@@ -61,13 +61,13 @@
                                                                 style="padding-top:10px; text-align:center">
 <%--                                                                onclick="return formcheck()"--%>
                                                                 <input name="image" type="submit"
-                                                                       src="static/images/loginbutton.gif" width="90" height="30" />
+                                                                       src="${pageContext.request.contextPath}/static/images/loginbutton.gif" width="90" height="30" />
                                                             </td>
                                                         </tr>
 
                                                         <tr>
                                                             <td colspan="2" style="padding-top:10px">
-                                                                <img src="static/images/loginline.gif" width="241" height="10" />
+                                                                <img src="${pageContext.request.contextPath}/static/images/loginline.gif" width="241" height="10" />
                                                             </td>
                                                         </tr>
                                                         <!-- <tr>
@@ -87,8 +87,8 @@
                                     <p>千种图书，供你挑选！注册即享受丰富折扣和优惠，便宜有好货！超过万本图书任您选。</p>
                                     <p>超人气社区！精彩活动每一天。买卖更安心！支付宝交易超安全。</p>
                                     <p style="text-align:left">
-                                        <a href="static/register.jsp">
-                                            <img src="$static/images/signupbutton.gif" width="135" height="33" />
+                                        <a href="${pageContext.request.contextPath}/static/register.jsp">
+                                            <img src="${pageContext.request.contextPath}/static/images/signupbutton.gif" width="135" height="33" />
                                         </a>
                                     </p>
                                 </td>

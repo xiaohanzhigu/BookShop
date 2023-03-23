@@ -10,7 +10,7 @@
 
 <body class="main">
 <jsp:include page="head.jsp" />
-<jsp:include page="menu_seach.jsp" />
+<jsp:include page="menu_search.jsp" />
 
 <div id="divcontent">
   <table width="850px" border="0" cellspacing="0">
