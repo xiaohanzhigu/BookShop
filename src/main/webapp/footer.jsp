@@ -19,7 +19,7 @@
     <table width="100%" border="0" cellspacing="0">
         <tr>
             <td rowspan="2" style="width:10%">
-                <img src="static/images/logo.png" width="195" height="50"
+                <img src="${pageContext.request.contextPath}/static/images/logo.png" width="195" height="50"
                      style="margin-left:175px"/>
             </td>
             <td style="padding-top:5px; padding-left:50px">

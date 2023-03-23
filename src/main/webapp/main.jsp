@@ -10,9 +10,9 @@
 <head>
     <title>index</title>
     <!-- 导入 main.css、首页轮播图 css 和 js 脚本 -->
-    <link rel="stylesheet" href="static/css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/autoplay.css" type="text/css"/>
-    <script type="text/javascript" src="static/js/autoplay.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/autoplay.css" type="text/css"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/autoplay.js"></script>
 </head>
 <body>
 <div class="main">
@@ -28,22 +28,21 @@
     <div id="box_autoplay">
         <div class="list">
             <ul>
-                <li><img src="static/ad/index_ad1.jpg" width="900" height="335"/></li>
-                <li><img src="static/ad/index_ad2.jpg" width="900" height="335"/></li>
-                <li><img src="static/ad/index_ad3.jpg" width="900" height="335"/></li>
-                <li><img src="static/ad/index_ad4.jpg" width="900" height="335"/></li>
-                <li><img src="static/ad/index_ad5.jpg" width="900" height="335"/></li>
+                <li><img src="${pageContext.request.contextPath}/static/ad/index_ad1.jpg" width="900" height="335"/></li>
+                <li><img src="${pageContext.request.contextPath}/static/ad/index_ad2.jpg" width="900" height="335"/></li>
+                <li><img src="${pageContext.request.contextPath}/static/ad/index_ad3.jpg" width="900" height="335"/></li>
+                <li><img src="${pageContext.request.contextPath}/static/ad/index_ad4.jpg" width="900" height="335"/></li>
+                <li><img src="${pageContext.request.contextPath}/static/ad/index_ad5.jpg" width="900" height="335"/></li>
             </ul>
         </div>
     </div>
     <!-- 网上书城首页轮播图 end -->
-
     <!--4. 公告板和本周热卖 start -->
     <div id="divcontent">
         <table width="900px" border="0" cellspacing="0">
             <tr>
                 <td width="497">
-                    <img src="static/images/billboard.gif" width="497" height="38"/>
+                    <img src="${pageContext.request.contextPath}/static/images/billboard.gif" width="497" height="38"/>
                     <table cellspacing="0" class="ctl">
                         <tr>
                             <td width="485" height="29">
@@ -60,7 +59,7 @@
                     <table width="100%" border="0" cellspacing="0">
                         <tr>
                             <td>
-                                <img src="static/images/hottitle.gif" width="126"
+                                <img src="${pageContext.request.contextPath}/static/images/hottitle.gif" width="126"
                                      height="29"/>
                             </td>
                         </tr>
@@ -69,14 +68,14 @@
                         <tr>
                             <td style="width:80%; text-align:center">
                                 <a href="#">
-                                    <img src="static/bookcover/105.jpg" width="102"
+                                    <img src="${pageContext.request.contextPath}/static/bookcover/105.jpg" width="102"
                                          height="130" border="0"/>
                                 </a>
                                 <br/>
                             </td>
                             <td style="width:80%; text-align:center">
                                 <a href="#">
-                                    <img src="static/bookcover/106.jpg" width="102"
+                                    <img src="${pageContext.request.contextPath}/static/bookcover/106.jpg" width="102"
                                          height="130" border="0"/>
                                 </a>
                                 <br/>

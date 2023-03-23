@@ -44,7 +44,7 @@
                            onclick="my_click(this, 'textfield');"
                            onBlur="my_blur(this, 'textfield');"/>
                     <a href="#">
-                        <img src="static/images/serchbutton.gif" border="0"
+                        <img src="${pageContext.request.contextPath}/static/images/serchbutton.gif" border="0"
                              style="margin-bottom:-4px" onclick="search()"/>
                     </a>
                 </td>
@@ -52,5 +52,5 @@
         </table>
     </form>
 </div>
-</body>
+</body>;
 </html>

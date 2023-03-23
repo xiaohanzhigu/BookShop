@@ -10,9 +10,9 @@
 <head>
     <title>register</title>
     <!-- 导入 main.css、首页轮播图 css 和 js 脚本 -->
-    <link rel="stylesheet" href="static/css/main.css" type="text/css"/>
-    <link rel="stylesheet" href="static/css/autoplay.css" type="text/css"/>
-    <script type="text/javascript" src="static/js/autoplay.js"></script>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/autoplay.css" type="text/css"/>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/js/autoplay.js"></script>
 </head>
 <body>
 <div class="main">
@@ -25,7 +25,7 @@
 
     <!--用户注册-->
     <div id="divcontent" align="centent">
-        <form action="registersuccess.html" method="post" onsubmit="return checkForm();">
+        <form action="/bookshop/register" method="post" ><%--onsubmit="return checkForm();"--%>
             <table width="850px" border="0" cellspacing="0">
                 <tr>
                     <td style="padding: 30px"><h1>新用户注册</h1>

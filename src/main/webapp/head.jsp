@@ -20,12 +20,12 @@
         <tr>
             <td>
                 <a href="#">
-                    <img src="static/images/logo.png" width="200" height="60" border="0"
+                    <img src="${pageContext.request.contextPath}/static/images/logo.png" width="200" height="60" border="0"
                     />
                 </a>
             </td>
             <td style="text-align:right">
-                <img src="static/images/cart.gif" width="26" height="23"
+                <img src="${pageContext.request.contextPath}/static/images/cart.gif" width="26" height="23"
                      style="margin-bottom:-4px"/>&nbsp;<a href="#">购物车</a>
                 | <a href="#">帮助中心</a>
                 | <a href="#">我的帐户</a>
