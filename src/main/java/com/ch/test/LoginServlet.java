@@ -15,11 +15,12 @@ public class LoginServlet extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
+
         if ("itcast".equals(username) && "123".equals(password)) {
-            System.out.println(username+password);
-            resp.sendRedirect(req.getContextPath() + "/main.jsp");
+            System.out.println(username + password);
+            resp.sendRedirect(req.getContextPath() + "/account.jsp");
         } else {
-            System.out.println("错误");
+            resp.sendRedirect(req.getContextPath() + "/login.jsp");
         }
     }
 }

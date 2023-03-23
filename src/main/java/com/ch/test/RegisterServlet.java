@@ -16,10 +16,12 @@ public class RegisterServlet extends HttpServlet {
         String email = req.getParameter("email");
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        String repassword = req.getParameter("repassword");
+        String rePassword = req.getParameter("repassword");
         String[] genders = req.getParameterValues("gender");
         String telephone = req.getParameter("telephone");
-        System.out.println(email + username + password + repassword + genders + telephone);
-        resp.sendRedirect(req.getContextPath() + "/success.jsp");
+        if (username != null && password != null) {
+            resp.sendRedirect(req.getContextPath() + "/success.jsp");
+        }
+
     }
 }

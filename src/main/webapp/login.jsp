@@ -87,7 +87,7 @@
                                     <p>千种图书，供你挑选！注册即享受丰富折扣和优惠，便宜有好货！超过万本图书任您选。</p>
                                     <p>超人气社区！精彩活动每一天。买卖更安心！支付宝交易超安全。</p>
                                     <p style="text-align:left">
-                                        <a href="${pageContext.request.contextPath}/static/register.jsp">
+                                        <a href="${pageContext.request.contextPath}/register.jsp">
                                             <img src="${pageContext.request.contextPath}/static/images/signupbutton.gif" width="135" height="33" />
                                         </a>
                                     </p>
