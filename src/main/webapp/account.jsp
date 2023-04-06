@@ -49,7 +49,7 @@
                             <img src="${pageContext.request.contextPath }/static/images/icon3.png" width="15"
                                  height="10"/>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="${pageContext.request.contextPath}/LogoutServlet"
+                            <a href="${pageContext.request.contextPath}/logout"
                                onclick="javascript:return confirm_logout()">用户退出</a>
                         </td>
                     </tr>

@@ -28,7 +28,7 @@
                 <img src="${pageContext.request.contextPath}/static/images/cart.gif" width="26" height="23"
                      style="margin-bottom:-4px"/>&nbsp;<a href="#">购物车</a>
                 | <a href="#">帮助中心</a>
-                | <a href="#">我的帐户</a>
+                | <a href="${pageContext.request.contextPath}/account">我的帐户</a>
                 | <a href="register.jsp">新用户注册</a>
             </td>
         </tr>
