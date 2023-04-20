@@ -4,6 +4,7 @@ import com.ch.test.pojo.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -23,6 +24,13 @@ public class LoginServlet extends HttpServlet {
             user.setUsername(username);
             user.setPassword(password);
             req.getSession().setAttribute("user", user);
+
+            String autologin = req.getParameter("autologin");
+            if (autologin != null) {
+                Cookie cookie = new Cookie("autoLogin", username + ":" + password);
+                cookie.setMaxAge(60 * 60 *24 * 14);
+                resp.addCookie(cookie);
+            }
 
             resp.sendRedirect(req.getContextPath() + "/account");
         } else {
