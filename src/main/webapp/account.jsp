@@ -33,7 +33,7 @@
                             <img src="${pageContext.request.contextPath }/static/images/icon1.png" width="15"
                                  height="10"/>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="${pageContext.request.contextPath }/static/modifyuserinfo.jsp">用户信息修改</a>
+                            <a href="${pageContext.request.contextPath }/modifyuserinfo.jsp">用户信息修改</a>
                         </td>
                     </tr>
                     <tr>

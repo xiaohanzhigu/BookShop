@@ -1,5 +1,6 @@
-package com.ch.test;
+package com.ch.test.filter;
 
+import com.ch.test.dao.UserDao;
 import com.ch.test.pojo.User;
 
 import javax.servlet.*;
@@ -12,6 +13,8 @@ import java.io.IOException;
 
 @WebFilter(filterName = "AutoLoginFilter", urlPatterns = "/login.jsp")
 public class AutoLoginFilter implements Filter {
+    private UserDao userDao = new UserDao();
+
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
 
@@ -33,14 +36,16 @@ public class AutoLoginFilter implements Filter {
         }
         if (information != null && !"null".equals(information)) {
             String[] split = information.split(":");
-            String username = split[0];
-            String password = split[1];
-            if ("123".equals(username) && "123".equals(password)) {
-                User user = new User();
-                user.setUsername(username);
-                user.setPassword(password);
+            Integer id = Integer.parseInt(split[0]);
+            String username = split[1];
+            String password = split[2];
+            User user = userDao.getUserByUnameAndPassword(username, password);
+            if (user != null) {
+                //User user = new User();
+                //user.setId(id);
+                //user.setUsername(username);
+                //user.setPassword(password);
                 request.getSession().setAttribute("user", user);
-                //filterChain.doFilter(request, response);
                 response.sendRedirect(request.getContextPath() + "/account");
             }
         }

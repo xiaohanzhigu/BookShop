@@ -86,7 +86,7 @@
                             <tr>
                                 <td style="text-align: right">个人介绍：</td>
                                 <td colspan="2">
-                                    <textarea class="textarea" name="introduction"></textarea>
+                                    <textarea class="textarea" name="introduce"></textarea>
                                 </td>
                                 <td>&nbsp</td>
                             </tr>

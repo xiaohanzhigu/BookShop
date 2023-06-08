@@ -1,4 +1,4 @@
-package com.ch.test;
+package com.ch.test.servlet;
 
 import com.ch.test.pojo.User;
 
